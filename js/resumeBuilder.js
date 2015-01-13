@@ -6,7 +6,7 @@ var bio = {
 		"email":"meisam.ahmadi.1358@gmail.com",
 		"github":"meisam-ahmadi"
 	},
-	"picture":"images/mypic.jpg",
+	"pic":"images/mypic.jpg",
 	"welcomeMessage": "سلام",
 	"skills": ["awesomeness","HTML","CSS","C#","Github","teamworker"]
 };
@@ -71,5 +71,20 @@ var projects = {
 			"http://placekitten.com/g/300/300"
 		]
 	}]
-}
+};
 //436
+
+var formattedRole = HTMLheaderRole.replace("%data%",bio.role);
+$("#header").prepend(formattedRole);
+var formattedName = HTMLheaderName.replace("%data%",bio.name);
+$("#header").prepend(formattedName);
+var formattedPic = HTMLbioPic.replace("%data%",bio.pic);
+$("#header").prepend(formattedPic);
+if (bio.skills.length > 0) {
+  $("#header").append(HTMLskillsStart),
+   for( i = 0; i <bio.skills.length;i++){
+     var formattedSkills = HTMLskills.replace("%data%",bio.skills[i]);
+     $("#
+     }
+  
+};
